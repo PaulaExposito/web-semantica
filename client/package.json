@@ -1,0 +1,21 @@
+{
+    "name": "web-semantica",
+    "version": "1.0.0",
+    "description": "Web semántica: SPARQL y Wikidata",
+    "scripts": {
+        "dev": "parcel src/index.html",
+        "build": "parcel build --dist-dir build src/index.html",
+        "deploy": "parcel build src/index.html --dist-dir build --public-url /simon-says/ & npm run pages",
+        "pages": "gh-pages -d build"
+    },
+    "author": "PaulaExposito",
+    "license": "CC-BY-NC-4.0",
+    "dependencies": {
+        "@parcel/transformer-vue": "^2.0.1",
+        "firebase": "^9.6.1",
+        "gh-pages": "^3.2.3",
+        "naive-ui": "^2.23.1",
+        "parcel": "^2.0.0",
+        "vue": "^3.2.26"
+    }
+}
